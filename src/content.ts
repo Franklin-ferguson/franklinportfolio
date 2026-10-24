@@ -20,7 +20,6 @@ export const person = {
   location: "Accra, Ghana",
   github: "https://github.com/Franklin-ferguson",
   cv: "docs/Franklin_Ferguson_CV.pdf",
-  // CONFIRM: add a LinkedIn URL here to show it (none appears in the source documents).
   linkedin: "https://www.linkedin.com/in/franklin-ferguson-6b5319178/",
 };
 
@@ -317,11 +316,28 @@ export const stories: Story[] = [
           },
         ],
       },
+      {
+        maxWidth: 980,
+        items: [
+          {
+            kind: "photo",
+            src: "gexim-field-team",
+            alt: "Three members of the survey team on a laterite road beside farmland, one in a high-visibility vest",
+            caption: "In the field with the survey team.",
+          },
+          {
+            kind: "photo",
+            src: "gexim-farm-map",
+            alt: "A farm boundary mapped over satellite imagery in the monitoring and evaluation system, beside the Wa–Tumu road",
+            caption: "A surveyed farm boundary in the monitoring system.",
+          },
+        ],
+      },
     ],
   },
 ];
 
-/** Work at the mine. Real imagery and client screens are not published, so diagrams explain the method. */
+/** Work at the mine. Where no screens are shown, a diagram explains the method. */
 export interface Brief {
   id: string;
   title: string;
@@ -331,6 +347,8 @@ export interface Brief {
   tools: string[];
   diagram: DiagramVariant;
   caption: string;
+  cover?: Media;
+  rows?: Row[];
 }
 
 export const mine = {
@@ -564,6 +582,7 @@ export const experience: Role[] = [
     points: [
       "Led national survey, spraying and environmental-monitoring operations with RGB, multispectral, thermal and LiDAR sensors.",
       "Led SolidWorks and Fusion 360 prototyping of UAV subsystems, reducing hardware failures in the field.",
+      "Built SQL, Python and Power BI dashboards and KPI frameworks for the Tree Crops Development Authority (TCDA).",
       "Taught drone operations as an instructor with Ghana Flying Labs.",
     ],
   },
@@ -878,9 +897,12 @@ const fromBrief = (id: string, category: Category): Project => {
     did: b.did,
     outcome: b.outcome,
     tools: b.tools,
-    cover: { kind: "diagram", variant: b.diagram },
+    cover: b.cover
+      ? { kind: "media", item: b.cover, position: "0% 0%" }
+      : { kind: "diagram", variant: b.diagram },
+    rows: b.rows,
     diagram: b.diagram,
-    caption: `${b.caption} Mine data is not published.`,
+    caption: b.rows ? b.caption : `${b.caption} Mine data is not published.`,
   };
 };
 
@@ -904,6 +926,12 @@ export const projects: Project[] = [
   fromBrief("flight-test", "safety"),
   (() => {
     const c = card("cadastral");
+    const wingtra: Media = {
+      kind: "photo",
+      src: "wingtra-crew",
+      alt: "An orange Wingtra fixed-wing VTOL drone on a laterite road with three crew members and a GNSS base station on a tripod",
+      caption: "Setting up the Wingtra with a GNSS base station.",
+    };
     return {
       id: c.id,
       title: c.title,
@@ -915,7 +943,8 @@ export const projects: Project[] = [
       outcome:
         "A base map for a digital property-rate system, and cadastral boundary maps for about 1,000 hectares.",
       tools: c.tools,
-      cover: { kind: "diagram" as const, variant: "parcels" as DiagramVariant },
+      cover: { kind: "media" as const, item: wingtra, position: "50% 70%" },
+      rows: [{ maxWidth: 560, items: [wingtra] }],
       diagram: "parcels" as DiagramVariant,
       caption: "Parcel mapping, illustrated. Client maps are not published.",
     };

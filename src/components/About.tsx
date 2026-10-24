@@ -8,7 +8,7 @@ export default function About() {
         <div className="about__grid">
           <figure className="about__portrait" data-reveal>
             <div className="about__frame">
-              <Picture name="portrait-field" alt="Franklin Ferguson in a high-visibility vest holding a drone remote controller" sizes="(max-width: 860px) 90vw, 440px" />
+              <Picture name="portrait-studio-hd" alt="Portrait of Franklin Ferguson in a black SKT Live polo shirt, arms folded" sizes="(max-width: 860px) 90vw, 440px" eager />
             </div>
             <figcaption>
               <span className="about__name">Franklin Yesutor Ferguson</span>
