@@ -442,26 +442,27 @@ export const more: Card[] = [
   },
   {
     id: "dashboards",
-    title: "Dashboards people actually read",
-    org: "SKT Live for TCDA, and independent work",
-    year: "2023–25",
-    body: "SQL models, Python analysis and Power BI KPI frameworks for the Tree Crops Development Authority, and an open sales dashboard on GitHub.",
+    title: "Car sales dashboard in Power BI",
+    org: "Independent project",
+    year: "2024",
+    body: "An interactive Power BI dashboard that lets a car dealership track sales performance: year-to-date and month-to-date sales, average price and cars sold, compared with the previous year.",
     points: [
-      "Built dashboards and KPI frameworks for TCDA programme reporting.",
-      "Designed each page around a question a manager actually asks.",
+      "Built KPI cards for YTD and MTD total sales, average price and cars sold, each compared with the previous year.",
+      "Added a weekly YTD sales trend, sales by body style and colour, and a map of sales by dealer region.",
+      "Added a company-wise sales grid and a detailed table of every sale for drill-down.",
     ],
-    tools: ["SQL", "Python", "Power BI", "Excel"],
+    tools: ["Power BI", "DAX", "Data modelling"],
     media: [
       {
         kind: "photo",
         src: "dashboard-car-sales",
-        alt: "Power BI dashboard with sales totals, a map of dealer regions and a weekly trend",
-        caption: "Independent Power BI sales dashboard.",
+        alt: "Power BI car sales dashboard with YTD totals, a map of dealer regions, sales by body style and colour, and a weekly trend",
+        caption: "The finished dashboard.",
       },
     ],
     links: [
       {
-        label: "Sales dashboard on GitHub",
+        label: "Dashboard and .pbix file on GitHub",
         href: "https://github.com/Franklin-ferguson/Car-Sales-Dashboard-in-Power-BI",
       },
     ],
@@ -694,7 +695,8 @@ export const expertise: Skill[] = [
 export const platforms = [
   "YANGDA Sky Whale VTOL",
   "Wingtra ONE",
-  "TT Aviation 30L",
+  "TT Aviation 30L, 50L and 100L multirotors",
+  "DJI Drones (Mavic, Matrice, Agras, Phantom)",
   "RT SkyStar 180 aerostat",
   "Custom multirotors",
 ];
@@ -928,7 +930,8 @@ export const projects: Project[] = [
       category: "software" as Category,
       summary: c.body,
       did: c.points,
-      outcome: "Reporting that supports decisions across TCDA’s programmes.",
+      outcome:
+        "A single page where a dealership can follow sales, prices and volumes, spot trends and compare against last year.",
       tools: c.tools,
       cover: { kind: "media" as const, item: c.media![0], position: "0% 0%" },
       rows: [{ items: c.media! }],
