@@ -1,0 +1,268 @@
+{
+  "code-laptop": {
+    "w": 960,
+    "h": 1280,
+    "sizes": [
+      480,
+      960
+    ],
+    "tone": "rgb(40 40 40)"
+  },
+  "dashboard-car-sales": {
+    "w": 1355,
+    "h": 713,
+    "sizes": [
+      480,
+      960,
+      1355
+    ],
+    "tone": "rgb(56 56 56)"
+  },
+  "dashboard-outlets": {
+    "w": 1126,
+    "h": 632,
+    "sizes": [
+      480,
+      960,
+      1126
+    ],
+    "tone": "rgb(248 248 248)"
+  },
+  "field-base": {
+    "w": 1080,
+    "h": 1920,
+    "sizes": [
+      480,
+      960,
+      1080
+    ],
+    "tone": "rgb(232 232 248)"
+  },
+  "flying-wing-flight": {
+    "w": 311,
+    "h": 311,
+    "sizes": [
+      311
+    ],
+    "tone": "rgb(136 152 184)"
+  },
+  "mauritania-field": {
+    "w": 1280,
+    "h": 592,
+    "sizes": [
+      480,
+      960,
+      1280
+    ],
+    "tone": "rgb(216 200 184)"
+  },
+  "mauritania-team": {
+    "w": 1280,
+    "h": 960,
+    "sizes": [
+      480,
+      960,
+      1280
+    ],
+    "tone": "rgb(104 136 168)"
+  },
+  "mission-tablet": {
+    "w": 1080,
+    "h": 1920,
+    "sizes": [
+      480,
+      960,
+      1080
+    ],
+    "tone": "rgb(216 216 216)"
+  },
+  "multirotor-field": {
+    "w": 311,
+    "h": 311,
+    "sizes": [
+      311
+    ],
+    "tone": "rgb(56 56 40)"
+  },
+  "multirotor-ground": {
+    "w": 1310,
+    "h": 752,
+    "sizes": [
+      480,
+      960,
+      1310
+    ],
+    "tone": "rgb(216 152 104)"
+  },
+  "portrait-field": {
+    "w": 633,
+    "h": 633,
+    "sizes": [
+      480,
+      633
+    ],
+    "tone": "rgb(168 168 184)"
+  },
+  "portrait-studio": {
+    "w": 315,
+    "h": 490,
+    "sizes": [
+      315
+    ],
+    "tone": "rgb(8 8 8)"
+  },
+  "poster-asamankese": {
+    "w": 576,
+    "h": 318,
+    "sizes": [
+      480,
+      576
+    ],
+    "tone": "rgb(168 152 136)"
+  },
+  "poster-kundungu": {
+    "w": 480,
+    "h": 854,
+    "sizes": [
+      480
+    ],
+    "tone": "rgb(232 232 232)"
+  },
+  "poster-multirotor-test": {
+    "w": 848,
+    "h": 464,
+    "sizes": [
+      480,
+      848
+    ],
+    "tone": "rgb(184 168 168)"
+  },
+  "poster-seed-module": {
+    "w": 960,
+    "h": 540,
+    "sizes": [
+      480,
+      960
+    ],
+    "tone": "rgb(248 248 248)"
+  },
+  "poster-vtol-test": {
+    "w": 480,
+    "h": 848,
+    "sizes": [
+      480
+    ],
+    "tone": "rgb(136 152 168)"
+  },
+  "seed-module-cad": {
+    "w": 1267,
+    "h": 907,
+    "sizes": [
+      480,
+      960,
+      1267
+    ],
+    "tone": "rgb(248 248 248)"
+  },
+  "spray-drone-bench": {
+    "w": 633,
+    "h": 311,
+    "sizes": [
+      480,
+      633
+    ],
+    "tone": "rgb(216 216 216)"
+  },
+  "spray-drone-build": {
+    "w": 960,
+    "h": 1280,
+    "sizes": [
+      480,
+      960
+    ],
+    "tone": "rgb(24 24 24)"
+  },
+  "spray-drone-hover": {
+    "w": 1080,
+    "h": 1920,
+    "sizes": [
+      480,
+      960,
+      1080
+    ],
+    "tone": "rgb(232 232 232)"
+  },
+  "spray-fleet": {
+    "w": 1080,
+    "h": 1920,
+    "sizes": [
+      480,
+      960,
+      1080
+    ],
+    "tone": "rgb(200 200 200)"
+  },
+  "spray-operator": {
+    "w": 1080,
+    "h": 1920,
+    "sizes": [
+      480,
+      960,
+      1080
+    ],
+    "tone": "rgb(232 232 232)"
+  },
+  "vtol-assembly": {
+    "w": 2400,
+    "h": 1600,
+    "sizes": [
+      480,
+      960,
+      1600,
+      2000
+    ],
+    "tone": "rgb(216 216 216)"
+  },
+  "vtol-field-flight": {
+    "w": 480,
+    "h": 848,
+    "sizes": [
+      480
+    ],
+    "tone": "rgb(104 120 152)"
+  },
+  "vtol-field-prep": {
+    "w": 480,
+    "h": 848,
+    "sizes": [
+      480
+    ],
+    "tone": "rgb(216 216 216)"
+  },
+  "vtol-wing-ground": {
+    "w": 235,
+    "h": 235,
+    "sizes": [
+      235
+    ],
+    "tone": "rgb(200 200 200)"
+  },
+  "vtol-wing-team": {
+    "w": 311,
+    "h": 311,
+    "sizes": [
+      311
+    ],
+    "tone": "rgb(216 232 248)"
+  },
+  "workshop-airframes": {
+    "w": 1280,
+    "h": 960,
+    "sizes": [
+      480,
+      960,
+      1280
+    ],
+    "tone": "rgb(24 24 24)"
+  }
+}

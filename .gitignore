@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.build/
+.shots/
+.taste-skill/
+*.log
+.DS_Store
